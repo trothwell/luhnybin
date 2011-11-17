@@ -100,7 +100,7 @@ public class Main extends TestSuite {
           public void run() {
             try {
               bout.writeTo(out);
-              out.flush();
+              out.close();
             } catch (IOException e) {
               e.printStackTrace();
               System.exit(1);
